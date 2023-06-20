@@ -8,3 +8,55 @@
 h1 {
   color: blueviolet;
 }
+
+/* Register */
+.regis {
+  background-image: url("/images/vector.PNG");
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col_regis {
+  display: flex;
+  justify-content: center;
+}
+.col_text {
+  color: #ffffff;
+}
+.span_1 {
+  font-weight: 900;
+  font-size: 50px;
+}
+.span_2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+.card_regis {
+  width: 350px;
+  border-radius: 100%;
+}
+.text_regis {
+  font-weight: 700;
+  font-size: 30px;
+}
+.btn_regis {
+  background: linear-gradient(to bottom, #0084c5, #29c9ff);
+  color: white;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.form_input {
+  border-color: #0084c5 !important;
+}
+.login_regis {
+  color: #0084c5;
+  text-decoration: none;
+}
