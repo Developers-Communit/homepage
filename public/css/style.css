@@ -5,6 +5,14 @@
 }
 
 /* Code css disini */
-h1 {
-  color: blueviolet;
+
+.btn-login {
+  background: linear-gradient(90deg, #0078BC 0.32%, #00B7F1 100.32%);
+}
+.text-header{
+  color: #0A86DF;
+}
+.icon-header{
+  width: 48px;
+  height: 48px;
 }
