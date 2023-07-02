@@ -4,7 +4,34 @@
   box-sizing: border-box;
 }
 
-/* Code css disini */
+/* container header */
+h3 {
+  font-size: 45px;
+  font-weight: 900;
+  font-family: Poppins;
+  line-height: 38px;
+  color: #0a86df;
+}
+
+h3 span {
+  color: #000;
+}
+
+p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #000;
+}
+
+a {
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #0084c5;
+}
 
 .btn-login {
   background: linear-gradient(90deg, #0078BC 0.32%, #00B7F1 100.32%);
@@ -15,4 +42,30 @@
 .icon-header{
   width: 48px;
   height: 48px;
+}
+
+/* galery kegiatan */
+.images {
+  cursor: pointer;
+}
+.img1 {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 54px rgba(0, 0, 0, 0.25);
+}
+.img2 {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 54px rgba(0, 0, 0, 0.25);
+}
+.img3 {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 54px rgba(0, 0, 0, 0.25);
 }
