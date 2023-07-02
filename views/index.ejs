@@ -4,20 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebDev</title>
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-
+  
+  
     <!-- NAVBAR -->
-
-
-
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid mx-sm-5">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.navbar.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto gap-lg-5">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="#tentang"
+                >Tentang</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#kegiatan">Kegiatan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#penilaian">Penilaian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#membership">Membership</a>
+            </li>
+          </ul>
+          <a
+            href="/login"
+            class="btn btn-login text-white fw-semibold px-4 py-2 rounded-pill"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </nav>
 
     <!-- HEADER -->
+    <section id="header">
+      <div class="container mt-5">
+        <div class="row mx-4 d-flex align-items-center gap-5 gap-lg-0 ">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold">
+              <span class="text-header d-block"> DEVELOPERS </span>
+              <span class="text-black"> COMMUNITY </span>
+            </h1>
+            <p class="py-2 fw-medium  col-lg-10 ">
+              Sebuah komunitas developer yang di kembangkan oleh suatu tim yang
+              bernama ANFA TECH
+            </p>
+            <div class="">
+              <a href="#tentang" class="btn btn-login text-white fw-semibold px-4 py-2 rounded-pill mr-2 ">Tentang</a>
+              <a href="https://github.com/developers-Communit/">
+                <img src="/images/gh-vector.svg" alt="github" class=" img-fluid mx-2 icon-header ">
+              </a>
+              <a href="/">
+                <img src="/images/ig-vector.svg" alt="instagram" class=" img-fluid mx-2 icon-header">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img
+              src="/images/img-header.svg"
+              alt="image-header"
+              class="img-fluid mt-5"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -96,6 +166,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
     <script src="/js/index.js"></script>
   </body>
 </html>

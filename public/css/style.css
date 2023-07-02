@@ -25,6 +25,25 @@ p {
   color: #000;
 }
 
+a {
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #0084c5;
+}
+
+.btn-login {
+  background: linear-gradient(90deg, #0078BC 0.32%, #00B7F1 100.32%);
+}
+.text-header{
+  color: #0A86DF;
+}
+.icon-header{
+  width: 48px;
+  height: 48px;
+}
+
 /* galery kegiatan */
 .images {
   cursor: pointer;
@@ -50,12 +69,3 @@ p {
   box-sizing: border-box;
   box-shadow: 0px 20px 54px rgba(0, 0, 0, 0.25);
 }
-
-a {
-  font-family: poppins;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 38px;
-  color: #0084c5;
-}
-
