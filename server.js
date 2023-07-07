@@ -3,6 +3,7 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const mustache = require("mustache-express");
 const cors = require("cors");
+const session = require("express-session");
 
 const app = express();
 const port = 3000;
@@ -16,6 +17,13 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
+app.use(
+  session({
+    secret: "123xxx",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 
 const authRouters = require("./routes/auth-routes");
 const userRouters = require("./routes/user-routes");

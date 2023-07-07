@@ -6,16 +6,22 @@ class AuthController {
   }
   async register(req, res, next) {
     try {
-      await this.authService.register(req.body);
+      await this.authService.register(req.body, res);
+
       return res.redirect("/login");
     } catch (e) {
       next(e);
-      return res.redirect("/register");
+      // console.error(e);
+      return res.render("register", {
+        error: e.message,
+      });
     }
   }
+
   async login(req, res) {
     try {
       await this.authService.authenticateUser(req, res);
+      req.session.islogin = true;
       return res.redirect("/");
     } catch (error) {
       return res.status(500).json({ message: "Internal Server Error" });

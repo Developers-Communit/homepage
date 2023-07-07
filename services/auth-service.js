@@ -29,28 +29,24 @@ class AuthService {
       console.error(error);
     }
   }
-
   async register(request) {
     const { username, email, password } = request;
-
-    const hashedPassword = await bcrypt.hash(password, 10);
-    const data = {
-      username: username,
-      password: hashedPassword,
-      email: email,
-    };
-
     try {
-      // MENDAFTARKAN USER
       if (!username || !email || !password) {
-        console.log("Username, email, dan password harus diisi.");
-        return; // Menghentikan proses pendaftaran jika ada data yang kosong
+        throw new Error("Username, email, dan password harus diisi.");
       }
 
+      const hashedPassword = await bcrypt.hash(password, 10);
+      const data = {
+        username: username,
+        password: hashedPassword,
+        email: email,
+      };
       this.userRepository.createUser(data);
       console.log("Berhasil Daftar");
     } catch (error) {
-      console.error(error);
+      // console.error(error);
+      throw error;
     }
   }
   async authenticateUser(req, res) {

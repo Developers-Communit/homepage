@@ -45,12 +45,13 @@
               <a class="nav-link fs-6 fw-bold text-black" href="#membership">Membership</a>
             </li>
           </ul>
-          <a
-            href="/login"
-            class="btn btn-login text-white fw-semibold px-4 py-2 rounded-pill"
-          >
-            Login
-          </a>
+          {{#login}}
+            <a href="/logout" class="btn btn-logout text-white fw-semibold px-4 py-2 rounded-pill">Logout</a>
+          {{/login}}
+          {{^login}}
+            <a href="/login" class="btn btn-login text-white fw-semibold px-4 py-2 rounded-pill">Login</a>
+          {{/login}}
+
         </div>
       </div>
     </nav>

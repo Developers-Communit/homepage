@@ -5,7 +5,7 @@ const { AuthController } = require("../controllers/auth-controller");
 
 // register
 router.get("/register", (req, res) => {
-  res.render("backend/register");
+  res.render("register");
 });
 router.post("/register", (req, res, next) => {
   const authController = new AuthController();
@@ -14,7 +14,7 @@ router.post("/register", (req, res, next) => {
 
 // login
 router.get("/login", (req, res) => {
-  res.render("backend/login");
+  res.render("login");
 });
 
 router.post("/login", (req, res) => {
