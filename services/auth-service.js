@@ -42,6 +42,11 @@ class AuthService {
 
     try {
       // MENDAFTARKAN USER
+      if (!username || !email || !password) {
+        console.log("Username, email, dan password harus diisi.");
+        return; // Menghentikan proses pendaftaran jika ada data yang kosong
+      }
+
       this.userRepository.createUser(data);
       console.log("Berhasil Daftar");
     } catch (error) {
