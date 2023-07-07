@@ -1,5 +1,7 @@
 # Homepage WebDev Community
 
+# Homepage WebDev Community
+
 ## Rules
 
 - Frontend just work on Public and Views Folder

@@ -1,10 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,800&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Code css disini */
-h1 {
-  color: blueviolet;
+body{
+  font-family: 'poppins', sans-serif;
+}
+
+section, footer{
+  padding: 80px 0px;
+}
+
+hr{
+  margin-top: -10px;
+  border: 3px solid #004972;
+  border-radius: 20px;
+}
+
+.color-blue{
+  color: #0A86DF;
+}
+/* NAVBAR */
+.btn  {
+  background: linear-gradient(90deg, #0078BC 0.32%, #00B7F1 100.32%);
+}
+
+
+/* header */
+header h1 {
+  font-weight: 900;
+  font-family: Poppins;
+  letter-spacing: 10px;
+}
+
+header p {
+  font-family: Poppins;
+  font-weight: 600;
+  color: #000;
+}
+
+.text-header{
+  color: #0A86DF;
+}
+
+#header .social-media a{
+  text-decoration: none;
+}
+
+#header .social-media .btn-header{
+  margin-top: -20px;
+}
+
+#header .social-media a .icon-header,
+footer .social-media a .icon-footer{
+  font-size: 40px;
+  margin: 10px 10px;
+}
+
+
+
+/* LIST DATA */
+#list-data{
+  margin: 100px 0px;
+}
+.card-list{
+  padding: 39px;
+  border-radius: 17px;
+  background: linear-gradient(90deg, #485E81 0%, #5B77A3 100%);
+
+}
+.card-list .title-data{
+  letter-spacing: 1px;
+}
+
+
+/* Tentang */
+#tentang{
+  height: auto;
+}
+#tentang h1 span,
+#kegiatan h3 span,
+#penilaian h1 span,
+#membership h1 span,
+#penilaian .card .card-body .card-title{
+  color: #0A86DF;
+}
+#tentang .title{
+  padding: 10px;
+  border-radius: 10px 30px;
+  background: linear-gradient(90deg, #0084C5 0%, #00B7F1 100%);
+}
+#tentang .sec-tentang{
+  margin-top: 56px;
+}
+#tentang p .marker{
+  color: #0A86DF;
+}
+#tentang p a{
+  text-decoration: none;
+  color: black;
+}
+#tentang p a:hover{
+  color: #004972;
+}
+
+
+/* galery kegiatan */
+.images {
+  cursor: pointer;
+}
+.img1,
+.img2,
+.img3 {
+  background-color: #fff;
+}
+
+
+/* FOOTER */
+footer{
+  padding: 20px 0px;
+  background: linear-gradient(180deg, #0A86DF 0%, #05B9F6 100%);
+}
+footer .social-media,
+footer .logo{
+  display: flex;
+  justify-content: center;
+}
+footer .social-media a i{
+  color: white;
+}
+.footer{
+  margin: 10px auto;
+}
+.footer,
+footer .logo{
+  width: 100%;
+}
+footer .logo img{
+  width: 10rem;
+}
+
+
+@media screen and (max-width: 760px) {
+  section{
+    padding: 50px 0px;
+  }
 }
