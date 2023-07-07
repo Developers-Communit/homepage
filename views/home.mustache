@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebDev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.navbar.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav mx-auto gap-lg-5">
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-bold text-black" aria-current="page" href="#tentang"
+                >Tentang</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-bold text-black" href="#kegiatan">Kegiatan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-bold text-black" href="#penilaian">Penilaian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-bold text-black" href="#membership">Membership</a>
+            </li>
+          </ul>
+          <a
+            href="/login"
+            class="btn btn-login text-white fw-semibold px-4 py-2 rounded-pill"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="header" class="vh-auto">
+      <div class="container mt-5">
+        <div class="row mx-4 d-flex align-items-center gap-5 gap-lg-0 ">
+          <div class="col-lg-6">
+            <h1 class="fw-bold lh-1 fs-1 text-black title-header">
+              <span class="color-blue d-block"> DEVELOPERS </span>
+               COMMUNITY
+            </h1>
+            <p class="fw-normal fs-5 lh-1 lh-sm-3">
+              Sebuah komunitas developer yang di kembangkan oleh suatu tim yang
+              bernama ANFA TECH
+            </p>
+            <div class="social-media d-block">
+              <a href="#tentang" class="btn btn-header text-white fw-semibold px-4 rounded-pill mr-2 ">Tentang</a>
+              <a href="https://github.com/developers-Communit/">
+                <i class="fa-brands fa-github icon-header"></i>
+              </a>  
+              <a href="">
+                <i class="fa-brands fa-instagram icon-header"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img
+              src="/images/img-header.svg"
+              alt="image-header"
+              class="img-fluid mt-1"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <!-- LIST DATA -->
+    <div id="list-data">
+      <div class="container card-list shadow-lg">
+        <div class="row g-5">
+
+          <div class="col-md">
+            <div class="row content-data">
+              <div class="col-5">
+                <img src="/images/web-design.svg" class="img-fluid" alt="">
+              </div>
+              <div class="col-1">
+                <h1 class="text-light fs-3 title-data">01</h1>
+                <span class="text-light fs-6 fw-1">UI/UX Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="row content-data">
+              <div class="col-5">
+                <img src="/images/frontend.svg" class="img-fluid" alt="">
+              </div>
+              <div class="col-1">
+                <h1 class="text-light fs-3 title-data">01</h1>
+                <span class="text-light fs-6 fw-1">Frontend Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="row content-data">
+              <div class="col-5">
+                <img src="/images/backend.svg" class="img-fluid" alt="">
+              </div>
+              <div class="col-1">
+                <h1 class="text-light fs-3 title-data">01</h1>
+                <span class="text-light fs-6 fw-1">Backend Developer</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <!-- TENTANG -->
+      <section id="tentang" class="vh-auto">
+        <div class="container">
+
+          <h1 class="fs-2 fw-bold">
+            Mengenali lebih <br> dekat <span>tentang komunitas</span> ini!
+          </h1>
+
+          <div class="sec-tentang">
+            <p id="latar">
+              <span class="title fs-5 text-light fw-bold">Latar Belakang</span>
+            </p>
+            <p class="text fs-5">
+              Komunitas ini di bangun dengan suatu tujuan dan suatu masalah,
+              tujuan di bangunnya komunitas ini adalah untuk mengumpulkan 
+              para developer yang memiliki bakat dan minat yang sama untuk 
+              saling berkolaborasi, sharing dan saling mendukung atau 
+              menyemangati
+              <br><br>
+              Komunitas ini juga akan terus dikembangkan agar bisa 
+              memecahkan atau menyelesaikan sebuah masalah yaitu, banyaknya 
+              ekosistem komunitas yang masih belum sempurna dan tidak 
+              membantu sama sekali permasalahan yang di alami oleh seorang 
+              junior developer bahkan ada juga komunitas yang memiliki 
+              ekosistem yang buruk karena adanya kata yang merendahkan 
+              sesama member terutama junior developer.
+            </p>
+          </div>
+
+
+          <div class="sec-tentang">
+            <p id="visi">
+              <span class="title fs-5 text-light fw-bold">Visi dan Misi</span>
+            </p>
+            <p class="text fs-5">
+              <span class="fw-bold fs-4">Visi</span> Developers Community Menjadi komunitas terbaik,  
+              produktif serta nyaman untuk berkembang dan berkolaborasi. <br><br> 
+              <span class="fw-bold fs-4">Misinya</span> adalah Mengerjakan project bersama dan mengadakan event/podcast sharing pengalaman bersama,
+            </p>
+          </div>
+          
+
+
+          <div class="sec-tentang">
+            <p id="peraturan">
+              <span class="title fs-5 text-light fw-bold">Peraturan</span>
+            </p>
+            <p class="text fs-5">
+             <ol type="1" class="fs-5">
+              <li>Tidak diperbolehkan mengatakan kalimat suhu, 
+                pemula, di ganti dengan kalimat 'Sedang Berkembang
+                ' atau 'Ingin Berkembang 
+              </li>
+              <li>
+                Tidak ada unsur sara/rasis
+              </li>
+              <li>
+                Menjawab Pertanyaan member lain jika memang b
+                isa menjawab 
+              </li>
+              <li>
+                Selalu rendah hati sesama anggota tetapi bukan Rendah diri 
+              </li>
+              <li>
+                Tidak baperan (Pertemanan) 
+              </li>
+              <li>
+                Jika ada masalah sesama anggota silahkan hubungi admin 
+              </li>
+              <li>
+                Saling mendukung sesama anggota saat anggota sedang berjuang
+              </li>
+             </ol>
+            </p>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- PROJECT -->
+      <section id="kegiatan" class="vh-auto">
+        <div class="container">
+          <div class="row justify-content-end">
+              <div class="col-6 text-end">
+                  <h3 class="fs-1 fw-bold">Project terbaru <span>yang telah dikerjakan</span></H3>
+              </div>
+              <div class="row justify-content-center gb">
+              <div class="col-5">
+                  <p class="text-center fs-7">Kegiatan ini hanya bisa di ikuti oleh membership komunitas ini</p>
+              </div>
+          </div>
+          <div class="images gy-4">
+            <div class="row g-5">
+              <div class="col-md-4">
+                <div class="post1 shadow-lg ratio ratio-16x9 border-0">
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="post2 shadow-lg ratio ratio-16x9 border-0">
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="post3 shadow-lg ratio ratio-16x9 border-0">
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center gy-3">
+            <div class="col">
+              <a href="#" class="text-decoration-none text-center">More</a>
+            </div>
+          </div>
+      </div>
+      </section>
+
+
+
+
+      <!-- PENILAIAN -->
+      <section class="bg-ligth vh-auto" id="penilaian">
+      <div class="container">
+        <div>
+          <h1 class="fs-1 fw-bold">
+            <span>Penilaian</span> dan <span>saran atau kritikan</span> untuk komunitas kami
+            dari para member komunitas
+          </h1>
+        </div>
+        <br />
+        <div>
+          <div class="row g-4">
+            <div class="col-md">
+              <div class="card shadow border-0">
+                <div class="card-body">
+                  <b><h2 class="card-title">Nama</h2></b>
+                  <h4 class="text-black bg-white">Akun Sosial</h4>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Minus quod vel enim omnis recusandae expedita non, illo nam
+                    repellendus, vitae molestiae, fuga velit dignissimos rem. Ab
+                    expedita temporibus blanditiis laboriosam?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card shadow border-0">
+                <div class="card-body">
+                  <b><h2 class="card-title">Nama</h2></b>
+                  <h4 class="text-black bg-white">Akun Sosial</h4>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Minus quod vel enim omnis recusandae expedita non, illo nam
+                    repellendus, vitae molestiae, fuga velit dignissimos rem. Ab
+                    expedita temporibus blanditiis laboriosam?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card shadow border-0">
+                <div class="card-body">
+                  <b><h2 class="card-title">Nama</h2></b>
+                  <h4 class="text-black bg-white">Akun Sosial</h4>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Minus quod vel enim omnis recusandae expedita non, illo nam
+                    repellendus, vitae molestiae, fuga velit dignissimos rem. Ab
+                    expedita temporibus blanditiis laboriosam?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card shadow border-0">
+                <div class="card-body">
+                  <b><h2 class="card-title">Nama</h2></b>
+                  <h4 class="text-black bg-white">Akun Sosial</h4>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Minus quod vel enim omnis recusandae expedita non, illo nam
+                    repellendus, vitae molestiae, fuga velit dignissimos rem. Ab
+                    expedita temporibus blanditiis laboriosam?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+      <!-- MEMBERSHIP -->
+    <section id="membership">
+      <div class="container">
+        <h1 class="fs-1 fw-bold">
+          Cara menjadi <span>membership</span> di <br>   developers community
+        </h1>
+
+        <p class="fs-5 mt-5">
+          Untuk menjadi membership di komunitas ini, anda tidak 
+          memerlukan banyak syarat anda hanya ada beberapa 
+          kualifikasi syarat yang harus terpenuhi diantaranya 
+          yaitu
+          <ol type="1">
+            <li>Memiliki keinginan untuk bertumbuh bersama</li>
+            <li>Memiliki Tekad untuk sukses di bidang developer</li>
+            <li>Mampu mengoperasikan DIscord</li>
+            <li>Mampu menggunakan Git dan Github</li>
+          </ol>
+        </p>
+
+        <p class="fs-5">
+          Sebelum anda bergabung ke dalam komunitas ini anda harus 
+          mengetahui dan siap untuk menaati peraturan yang sudah 
+          ditetapkan yaitu:
+          <ol type="1">
+            <li>DI larang mengatakan perkataan kotor</li>
+            <li>DIlarang mengatakan Pemula, Sepuh, Tidak bisa 
+              (Ganti dengan mau berkembang, pengen bisa)</li>
+            <li>Saling menyemangati bukan merendahkan!</li>
+            <li>aktif dalam grup maupun discord</li>
+            <li>Saling berkolaborasi</li>
+          </ol>
+        </p>
+
+        <p class="fs-5">
+          Itulah kualifikasi atau syarat yang harus terpenuhi! 
+          Jika anda sudah memenuhi kualifikasi atau persyaratan 
+          tersebut anda boleh mengisi form yang ada pada 
+          <a href="">link ini</a>
+        </p>
+
+        <h3 class="fs-4 fw-bold">KAMI TUNGGU PERKEMBANGAN ANDA DI KOMUNITAS INI!</h3>
+      </div>
+    </section>
+
+
+
+
+      <!-- FOOTER -->
+    <footer class="container-fluid vh-auto">
+      <div class="footer">
+        <div class="social-media">
+              <a href=""><i class="fs-2  fas fa-envelope icon-footer"></i></a>
+              <a href=""><i class="fs-2  fa-brands fa-instagram icon-footer"></i></a>
+              <a href=""><i class="fs-2  fa-brands fa-github icon-footer"></i></a>  
+          </div>
+          <div class="logo">
+            <img src="/images/footerLogo.svg">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
