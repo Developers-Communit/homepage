@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebDev</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/register.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Content Register -->
+    <div class="regis container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col_text col-lg-4 my-auto px-4 py-3">
+            <span class="span_1 lh-1 fw-bold fs-1">WELCOME COMMUNITY MEMBERS</span><br />
+            <span class="span_2 fs-6 fw-light">Silahkan daftar untuk dapat terdaftar di komunitas kami!</span>
+          </div>
+          <div class="col_regis col-lg-8 px-4 py-3">
+            <div class="card_regis card shadow border-0 px-4">
+              <div class="body_regis card-body">
+
+                <form action="register" method="POST">
+                  <h3 class="text_regis pt-3">Register</h3>
+
+                  <!-- input -->
+                  <div class="pt-3"><input class="form_input form-control" type="text" placeholder="username" name="username" /></div>
+                  <div class="pt-3"><input class="form_input form-control" type="text" placeholder="email" name="email" /></div>
+                  <div class="pt-3"><input class="form_input form-control" type="text" placeholder="password" name="password" /></div>
+                  <div class="pt-3"><input class="form_input form-control" type="text" placeholder="confirm" name="confirm" /></div>
+
+                  <!-- button -->
+                  <div class="pt-3">
+                    <button type="submit" class="btn_regis">Register</button>
+                  </div>
+                  {{#error}}
+                    <p class="error-message">{{error}}</p> <!-- Menampilkan pesan error jika ada -->
+                  {{/error}}
+                </form>
+
+                <div class="pt-4">
+                  <p class="">
+                    sudah punya akun?<br />
+                    <a class="login_regis" href="/login">Login</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
